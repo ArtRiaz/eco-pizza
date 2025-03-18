@@ -9,27 +9,23 @@ const pizzas = [
     description:
       "піца з шинкою, соковитим томатом, маслинами, ароматною зеленню з піца-соусом і сиром моцарела. Підвішена піца буде передана в подарунок нашим Захисникам! Дякуємо!",
     price: 75,
-    image: "/images/pizza_defender.png",
   },
   {
     title: "Піца 'Груша з горгонзолою'",
     description: "сирно-вершковий соус, сир Моцарелла, груша, сир Горгонзола, кунжут",
     price: 179,
-    image: "/images/pizza_pear_gorgonzola.png",
   },
   {
     title: "Піца '4 сири'",
     description:
       "сирно-вершковий соус, моцарелла, пармезан, Емменталь, горгонзола, кунжут, волоський горіх, клей рослинний (з насіння льону)",
     price: 209,
-    image: "/images/pizza_4_cheese.png",
   },
   {
     title: "Піца 'Royal Beef'",
     description:
       "томатний піца-соус, моцарелла, кунжут, фарш яловичий, цибуля маринована, перець Халапеньо",
     price: 169,
-    image: "/images/pizza_royal_beef.png",
   },
 ];
 
@@ -51,12 +47,7 @@ export default function PizzaMenu() {
       <ScrollArea className="h-[600px]">
         {pizzas.map((pizza, index) => (
           <Card key={index} className="mb-4">
-            <CardContent className="flex flex-col sm:flex-row gap-4 p-4">
-              <img
-                src={pizza.image}
-                alt={pizza.title}
-                className="w-full sm:w-28 h-28 object-cover rounded-xl"
-              />
+            <CardContent className="flex flex-col gap-4 p-4">
               <div className="flex flex-col justify-between">
                 <div>
                   <h2 className="text-lg font-semibold">{pizza.title}</h2>

@@ -9,7 +9,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/eco-pizza/' // Имя твоего GitHub репозитория
+  base: '/eco-pizza/', // ОБЯЗАТЕЛЬНО имя репозитория на GitHub
 })
+
+
 
 
